@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>『あの日の教室』モニター版</title>
+<style>
+  :root{
+    --paper:#f3ede1;      /* わら半紙 */
+    --ink:#3b2f26;        /* 濃い茶 */
+    --sub:#6b5a4a;
+    --board:#1f4d33;      /* 黒板 */
+    --board-dark:#173c28;
+    --chalk:#e8e6d9;
+    --wood:#a8784d;       /* 木枠 */
+    --line:#ddd2bf;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",
+      "Yu Gothic",system-ui,sans-serif;
+    line-height:1.85; font-size:16px;
+  }
+  .wrap{max-width:600px; margin:0 auto; padding:28px 20px 64px}
+  header{text-align:center; padding:8px 0 4px}
+  .board{
+    background:var(--board); border:6px solid var(--wood); border-radius:10px;
+    color:var(--chalk); padding:26px 20px; text-align:center;
+    box-shadow:0 3px 0 rgba(90,60,30,.25);
+  }
+  .board h1{margin:0 0 6px; font-size:1.5rem; letter-spacing:.04em; font-weight:700}
+  .board p{margin:0; color:#cfd8cd; font-size:.94rem}
+  h2{
+    font-size:1.06rem; margin:34px 0 10px; padding-bottom:6px;
+    border-bottom:2px solid var(--line);
+  }
+  p{margin:.7em 0}
+  .lead{font-size:1.02rem}
+  .btn{
+    display:block; text-align:center; text-decoration:none;
+    background:var(--board); color:var(--chalk);
+    border:3px solid var(--wood); border-radius:10px;
+    padding:16px 18px; font-size:1.12rem; font-weight:700;
+    margin:18px 0 8px; box-shadow:0 3px 0 rgba(90,60,30,.3);
+  }
+  .btn:active{transform:translateY(2px); box-shadow:0 1px 0 rgba(90,60,30,.3)}
+  .btn small{display:block; font-weight:400; font-size:.8rem; color:#c8d3c8;
+    margin-top:4px}
+  .meta{
+    background:#fffaf0; border:1px solid var(--line); border-radius:8px;
+    padding:12px 14px; font-size:.9rem; color:var(--sub);
+  }
+  .meta dl{margin:0; display:grid; grid-template-columns:auto 1fr; gap:2px 14px}
+  .meta dt{color:var(--sub)}
+  .meta dd{margin:0; color:var(--ink)}
+  ol{padding-left:1.3em} ol li{margin:.5em 0}
+  .note{
+    background:#fffaf0; border-left:4px solid var(--wood);
+    padding:10px 14px; font-size:.9rem; color:var(--sub); border-radius:0 6px 6px 0;
+  }
+  footer{margin-top:40px; padding-top:16px; border-top:2px solid var(--line);
+    font-size:.86rem; color:var(--sub); text-align:center}
+  .soon{
+    display:block; text-align:center; background:#eee6d6; color:var(--sub);
+    border:2px dashed var(--line); border-radius:10px; padding:14px;
+    font-size:.94rem; margin:18px 0 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="board">
+    <h1>『あの日の教室』モニター版</h1>
+    <p>授業中に、こっそり手紙を回す。</p>
+  </div>
+</header>
+
+<p class="lead">
+先生に見つからないように、席から席へ手紙を回して、
+届けたい相手まで運ぶ short game です。全30話。
+1話は数分で終わります。
+</p>
+<p>
+まだ完成前のモニター版です。よければ遊んでみて、
+気づいたことを聞かせてください。
+</p>
+
+<h2>Android で遊ぶ</h2>
+
+<a class="btn" href="https://github.com/memoryreframedlab/anohi-no-kyoshitsu-monitor/releases/latest/download/anohi-no-kyoshitsu-monitor.apk">
+  Android版をダウンロード
+  <small>anohi-no-kyoshitsu-monitor.apk ／ 約161 MB</small>
+</a>
+
+<div class="meta">
+  <dl>
+    <dt>バージョン</dt><dd>1.0.0（モニター版 1）</dd>
+    <dt>更新日</dt><dd>2026年9月5日</dd>
+    <dt>容量</dt><dd>約161 MB</dd>
+    <dt>対応</dt><dd>Android 端末（縦画面）</dd>
+  </dl>
+</div>
+
+<h2>インストールのしかた</h2>
+<ol>
+  <li>上のボタンを押して、APKファイルをダウンロードします。</li>
+  <li>ダウンロードが終わったら、その通知かファイルを開きます。</li>
+  <li>
+    「提供元不明のアプリ」「不明なアプリのインストール」といった確認が
+    出ることがあります。お店（Google Play）を通していないアプリなので、
+    Androidが念のため確認しているものです。画面の案内にしたがって
+    許可すると、続けてインストールできます。
+  </li>
+  <li>インストールが終わったら、アプリ一覧から「あの日の教室」を開きます。</li>
+</ol>
+
+<div class="note">
+確認画面の文言や場所は、端末のメーカーやAndroidのバージョンによって
+違います。「このまま インストール」「設定を開く」など、
+表示されたボタンを進めていけば大丈夫です。
+うまくいかないときは、そのまま教えてください。
+</div>
+
+<h2>iPhone・iPad・PC で遊ぶ</h2>
+<span class="soon">
+  ブラウザ版は準備中です。<br>
+  用意ができたら、あらためてお知らせします。
+</span>
+
+<h2>知っておいてほしいこと</h2>
+<ul>
+  <li>まだ調整中のモニター版です。</li>
+  <li>
+    遊んだ記録（どの話まで進んだか、音楽の設定）は、
+    <strong>あなたの端末の中だけ</strong>に保存されます。
+    こちらから見ることはできません。
+  </li>
+  <li>
+    アプリを削除すると、遊んだ記録も一緒に消えることがあります。
+  </li>
+  <li>広告はありません。通信もしません。</li>
+</ul>
+
+<footer>
+  感想や不具合は、このページを送ってくれた人へお伝えください。<br>
+  『あの日の教室』モニター版 1.0.0
+</footer>
+
+</div>
+</body>
+</html>
