@@ -15,6 +15,7 @@
     --chalk:#e8e6d9;
     --wood:#a8784d;       /* 木枠 */
     --line:#ddd2bf;
+    --warn:#8a4b2a;
   }
   *{box-sizing:border-box}
   body{
@@ -42,7 +43,7 @@
     display:block; text-align:center; text-decoration:none;
     background:var(--board); color:var(--chalk);
     border:3px solid var(--wood); border-radius:10px;
-    padding:16px 18px; font-size:1.12rem; font-weight:700;
+    padding:18px 18px; font-size:1.18rem; font-weight:700;
     margin:18px 0 8px; box-shadow:0 3px 0 rgba(90,60,30,.3);
   }
   .btn:active{transform:translateY(2px); box-shadow:0 1px 0 rgba(90,60,30,.3)}
@@ -56,10 +57,16 @@
   .meta dt{color:var(--sub)}
   .meta dd{margin:0; color:var(--ink)}
   ol{padding-left:1.3em} ol li{margin:.5em 0}
+  ul{padding-left:1.2em}
   .note{
     background:#fffaf0; border-left:4px solid var(--wood);
     padding:10px 14px; font-size:.9rem; color:var(--sub); border-radius:0 6px 6px 0;
   }
+  .warn{
+    background:#fdf3ec; border:2px solid var(--warn); border-radius:8px;
+    padding:14px 16px; margin:18px 0;
+  }
+  .warn b{color:var(--warn)}
   footer{margin-top:40px; padding-top:16px; border-top:2px solid var(--line);
     font-size:.86rem; color:var(--sub); text-align:center}
 </style>
@@ -84,40 +91,45 @@
 気づいたことを聞かせてください。
 </p>
 
-<h2>Android で遊ぶ</h2>
+<h2>遊ぶ</h2>
 
-<a class="btn" href="https://github.com/memoryreframedlab/anohi-no-kyoshitsu-monitor/releases/latest/download/anohi-no-kyoshitsu-monitor.apk">
-  Android版をダウンロード
-  <small>anohi-no-kyoshitsu-monitor.apk ／ 約161 MB</small>
+<a class="btn" href="play/">
+  ▶ ブラウザですぐ遊ぶ
+  <small>iPhone・Android・パソコン ／ インストール不要</small>
 </a>
 
 <div class="meta">
   <dl>
-    <dt>バージョン</dt><dd>1.0.0（モニター版 1）</dd>
+    <dt>遊び方</dt><dd>上のボタンを押すだけ</dd>
+    <dt>対応</dt><dd>iPhone / Android / パソコン（縦画面）</dd>
+    <dt>通信量</dt><dd>初回のみ 約125 MB</dd>
     <dt>更新日</dt><dd>2026年9月7日</dd>
-    <dt>容量</dt><dd>約161 MB</dd>
-    <dt>対応</dt><dd>Android 端末（縦画面）</dd>
   </dl>
 </div>
 
-<h2>インストールのしかた</h2>
+<div class="warn">
+  <p><b>このモニター版は、1か月ほどで公開を終了する予定です。</b></p>
+  <p>
+    調整中のため、<b>予告なく終了したり、一時的に遊べなくなることがあります。</b>
+    遊べなくなっていたら、そういうものだと思ってください。
+  </p>
+</div>
+
+<h2>はじめての方へ</h2>
 <ol>
-  <li>上のボタンを押して、APKファイルをダウンロードします。</li>
-  <li>ダウンロードが終わったら、その通知かファイルを開きます。</li>
+  <li>上のボタンを押すと、そのまま始まります。</li>
   <li>
-    「提供元不明のアプリ」「不明なアプリのインストール」といった確認が
-    出ることがあります。お店（Google Play）を通していないアプリなので、
-    Androidが念のため確認しているものです。画面の案内にしたがって
-    許可すると、続けてインストールできます。
+    最初だけ、読み込みに少し時間がかかります（約125 MB）。
+    Wi-Fi につないでおくと安心です。
   </li>
-  <li>インストールが終わったら、アプリ一覧から「あの日の教室」を開きます。</li>
+  <li>緑の画面に線が出たら、読み込み中です。そのままお待ちください。</li>
+  <li>タイトルが出たら「スタート」を押してください。</li>
 </ol>
 
 <div class="note">
-確認画面の文言や場所は、端末のメーカーやAndroidのバージョンによって
-違います。「このまま インストール」「設定を開く」など、
-表示されたボタンを進めていけば大丈夫です。
-うまくいかないときは、そのまま教えてください。
+ホーム画面に追加しておくと、アプリのように開けます。<br>
+iPhone は共有ボタン →「ホーム画面に追加」、
+Android はメニュー →「ホーム画面に追加」です。
 </div>
 
 <h2>知っておいてほしいこと</h2>
@@ -125,13 +137,17 @@
   <li>まだ調整中のモニター版です。</li>
   <li>
     遊んだ記録（どの話まで進んだか、音楽の設定）は、
-    <strong>あなたの端末の中だけ</strong>に保存されます。
+    <strong>あなたの端末のブラウザの中だけ</strong>に保存されます。
     こちらから見ることはできません。
   </li>
   <li>
-    アプリを削除すると、遊んだ記録も一緒に消えることがあります。
+    ブラウザの履歴やデータを消すと、遊んだ記録も一緒に消えます。
   </li>
-  <li>広告はありません。通信もしません。</li>
+  <li>
+    古い端末では動かないことがあります
+    （iPhone は iOS 15 以前では動きません）。
+  </li>
+  <li>広告はありません。ゲームの中から通信もしません。</li>
 </ul>
 
 <footer>
