@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1788665285|11839491';
+const CACHE_VERSION = '1788666315|10776650';
 /** @type {string} */
 const CACHE_PREFIX = 'あの日の教室-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
